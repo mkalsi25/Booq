@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <title>Home | Booq</title>
+  </head>
+  <body>
+    <header
+      class="p-3 flex items-center justify-between max-w-screen-2xl w-full mx-auto text-indigo-600 tracking-widest"
+    >
+      <h1 class="text-4xl font-sans">Booq</h1>
+    </header>
+    <main
+      class="h-screen flex items-center justify-center max-w-6xl w-full mx-auto"
+    >
+      <div class="w-full space-y-6">
+        <h2 class="text-center text-4xl font-serif">
+          Find your dream ibiza villa
+        </h2>
+        <div class="w-full bg-gray-200 py-10 grid gap-4">
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 gap-4 items-center w-full lg:w-5/6 mx-auto"
+          >
+            <div class="flex items-center space-x-3 w-full">
+              <input type="date" class="w-full py-2 px-3 rounded-md text=xs" />
+              <label>to</label>
+            </div>
+            <div class="flex items-center w-full">
+              <input type="date" class="w-full py-2 px-3 rounded-md text=xs" />
+            </div>
+            <div class="w-full">
+              <select class="w-full py-2 px-3 rounded-md text=xs">
+                <option>Guests</option>
+              </select>
+            </div>
+            <div class="w-full">
+              <select class="w-full py-2 px-3 rounded-md text=xs">
+                <option>Guests</option>
+              </select>
+            </div>
+          </div>
+          <div
+            class="grid md:flex items-center justify-center space-x-0 md:space-x-4 text-sm py-3"
+          >
+            <div class="flex space-x-3 items-center">
+              <input type="checkbox" />
+              <label>with a Seaview</label>
+            </div>
+            <div class="flex space-x-3 items-center">
+              <input type="checkbox" />
+              <label>modern/contemporary style</label>
+            </div>
+            <div class="flex space-x-3 items-center">
+              <input type="checkbox" />
+              <label>traditional style</label>
+            </div>
+          </div>
+          <div class="flex items-center] justify-center">
+            <button
+              class="outline-none focus-within::outline-none px-4 py-2 rounded bg-indigo-600 text-white text-sm"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
