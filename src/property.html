@@ -8,42 +8,88 @@
     <title>Property Page</title>
   </head>
   <body>
-    <header class="bg-gray-100">
+    <header class="bg-accent">
       <div
-        class="grid md:flex gap-4 items-center justify-between p-3 max-w-screen-2xl w-full mx-auto"
+        class="grid md:flex gap-4 md:space-x-16 items-start justify-between p-4 md:p-8 w-full mx-auto"
       >
-        <h1 class="text-4xl font-sans text-indigo-600">Booq</h1>
+        <h1 class="text-3xl font-sans text-primary font-semibold">boooq</h1>
         <div
-          class="grid grid-cols-2 md:grid-cols-4 gap-4 items-center max-w-screen-lg w-full lg:w-5/6 mx-auto"
+          class="w-11/12 md:w-full mx-auto bg-yellow-500 bg-opacity-10 p-4 md:p-10 grid md:flex space-x-6 md:space-x-0 rounded-xl"
         >
-          <div class="flex items-center space-x-3 w-full">
-            <input type="date" class="w-full py-2 px-3 rounded-md text=xs" />
-            <label>to</label>
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 gap-4 items-center w-full lg:w-5/6 mx-auto"
+          >
+            <div class="w-full">
+              <label class="font-semibold text-lg px-3">From</label>
+              <input
+                type="date"
+                class="w-full py-2 px-3 bg-transparent rounded-md text=xs"
+              />
+            </div>
+            <div class="w-full">
+              <label class="font-semibold text-lg px-3">To</label>
+              <input
+                type="date"
+                class="w-full py-2 px-3 bg-transparent rounded-md text=xs"
+              />
+            </div>
+            <div class="w-full">
+              <label class="font-semibold text-lg px-3">Guests</label>
+              <select
+                class="w-full py-2 px-3 rounded-md text-xs bg-transparent"
+              >
+                <option>2</option>
+              </select>
+            </div>
+            <div class="w-full">
+              <label class="font-semibold text-lg px-3">Experience</label>
+              <select
+                class="w-full py-2 px-3 rounded-md text-xs bg-transparent"
+              >
+                <option>Guests</option>
+              </select>
+            </div>
           </div>
-          <div class="flex items-center w-full">
-            <input type="date" class="w-full py-2 px-3 rounded-md text=xs" />
-          </div>
-          <div class="w-full">
-            <select class="w-full py-2 px-3 rounded-md text=xs">
-              <option>Guests</option>
-            </select>
-          </div>
-          <div class="w-full">
-            <select class="w-full py-2 px-3 rounded-md text=xs">
-              <option>Guests</option>
-            </select>
+          <div class="flex items-center justify-center">
+            <button
+              class="outline-none focus-within::outline-none px-8 py-4 rounded-full bg-yellow-500 text-white text-sm"
+            >
+              Search
+            </button>
           </div>
         </div>
-        <div></div>
       </div>
     </header>
-    <main class="p-4 md:p-8">
+    <main class="p-4 md:p-8 bg-accent bg-opacity-50">
       <div class="grid grid-cols-12 gap-5">
-        <div class="col-span-12 md:col-span-4">
+        <div class="col-span-12 md:col-span-6">
+          <img
+            src="https://via.placeholder.com/350"
+            class="h-80 object-cover w-full rounded-2xl"
+          />
+        </div>
+        <div class="col-span-12 md:col-span-6">
           <div class="flex space-x-3">
             <div class="space-y-4">
-              <h2 class="uppercase tracking-widest text-4xl">Casa Nova</h2>
-              <p class="text-sm">
+              <div class="flex items-center space-x-4">
+                <h2 class="text-2xl font-semibold">Casa Nova</h2>
+                <div class="flex space-x-1 text-blue-500 text-sm items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-7 w-7 fill-current mx-auto"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <strong>Verified Owner</strong>
+                </div>
+              </div>
+              <p class="text-base leading-6">
                 Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -53,61 +99,165 @@
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
             </div>
-            <div>
+          </div>
+          <div class="flex justify-between py-2 space-x-4">
+            <div
+              class="text-center text-sm w-full border rounded-xl grid items-center p-4"
+            >
               <svg
+                viewBox="0 0 40 40"
+                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 fill-current text-indigo-600 mx-auto"
-                viewBox="0 0 20 20"
-                fill="currentColor"
+                class="mx-auto h-8 w-8"
+              >
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M9.68802 10.3044C9.49271 10.3044 9.33435 10.4628 9.33435 10.6581V12.9065H16.7261V10.658C16.7261 10.4627 16.5679 10.3044 16.3726 10.3044H9.68802Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M23.6275 10.3044C23.4322 10.3044 23.2738 10.4628 23.2738 10.6581V12.9065H30.6656V10.6581C30.6656 10.4628 30.5073 10.3045 30.312 10.3045H23.6275V10.3044Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M6.96717 12.8833V10.658C6.96717 9.15778 8.18772 7.93724 9.68795 7.93724H16.3725C17.8727 7.93724 19.0933 9.15778 19.0933 10.658V12.8833H20.9066V10.658C20.9066 9.15778 22.1272 7.93724 23.6274 7.93724H30.312C31.8122 7.93724 33.0327 9.15778 33.0327 10.658V12.8833H34.9167C35.2842 12.8833 35.6431 12.9205 35.9902 12.9911V5.73052C35.9902 4.16817 34.7236 2.90161 33.1613 2.90161H6.83866C5.27631 2.90161 4.00983 4.16817 4.00983 5.73052V12.9911C4.35678 12.9206 4.71576 12.8833 5.08326 12.8833H6.96717Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M38.5334 20.2197H1.46664C0.656641 20.2197 0 20.8764 0 21.6864V31.2993C0 32.1093 0.656641 32.7659 1.46664 32.7659H38.5334C39.3434 32.7659 40 32.1093 40 31.2993V21.6864C40 20.8764 39.3434 20.2197 38.5334 20.2197Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M34.9167 15.2505H5.08321C3.55946 15.2505 2.30102 16.3833 2.10211 17.8525H37.8978C37.6989 16.3833 36.4405 15.2505 34.9167 15.2505Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M1.46576 35.1328V35.9148C1.46576 36.5684 1.99568 37.0984 2.64935 37.0984C3.30302 37.0984 3.83295 36.5684 3.83295 35.9148V35.1329H1.46662C1.46631 35.1328 1.46607 35.1328 1.46576 35.1328Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M36.1671 35.1329V35.9148C36.1671 36.5684 36.697 37.0984 37.3506 37.0984C38.0043 37.0984 38.5342 36.5684 38.5342 35.9148V35.1328C38.5339 35.1328 38.5337 35.1328 38.5334 35.1328H36.1671V35.1329Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="40" height="40" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>Bedroom</p>
+              <strong class="text-3xl">6</strong>
+            </div>
+            <div
+              class="text-center text-sm w-full border rounded-xl grid items-center p-4"
+            >
+              <svg
+                class="h-8 w-8 mx-auto"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  fill-rule="evenodd"
-                  d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  clip-rule="evenodd"
+                  d="M12.0032 9.99597C12.0032 9.62791 11.7048 9.32959 11.3368 9.32959C10.9688 9.32959 10.6704 9.62791 10.6704 9.99597V10.6623C10.6704 11.0304 10.9687 11.3287 11.3368 11.3287C11.7048 11.3287 12.0032 11.0304 12.0032 10.6623V9.99597Z"
+                  fill="black"
+                />
+                <path
+                  d="M12.0032 13.328C12.0032 12.9599 11.7048 12.6616 11.3368 12.6616C10.9688 12.6616 10.6704 12.9599 10.6704 13.328V13.9944C10.6704 14.3624 10.9687 14.6607 11.3368 14.6607C11.7048 14.6607 12.0032 14.3624 12.0032 13.9944V13.328Z"
+                  fill="black"
+                />
+                <path
+                  d="M11.3368 15.9937C10.9687 15.9937 10.6704 16.292 10.6704 16.66V17.3264C10.6704 17.6945 10.9687 17.9928 11.3368 17.9928C11.7048 17.9928 12.0032 17.6945 12.0032 17.3264V16.66C12.0032 16.292 11.7048 15.9937 11.3368 15.9937Z"
+                  fill="black"
+                />
+                <path
+                  d="M14.6688 9.99597C14.6688 9.62791 14.3705 9.32959 14.0024 9.32959C13.6344 9.32959 13.3361 9.62791 13.3361 9.99597V10.6623C13.3361 11.0304 13.6344 11.3287 14.0024 11.3287C14.3705 11.3287 14.6688 11.0304 14.6688 10.6623V9.99597Z"
+                  fill="black"
+                />
+                <path
+                  d="M14.6688 13.328C14.6688 12.9599 14.3705 12.6616 14.0024 12.6616C13.6344 12.6616 13.3361 12.9599 13.3361 13.328V13.9944C13.3361 14.3624 13.6344 14.6607 14.0024 14.6607C14.3705 14.6607 14.6688 14.3624 14.6688 13.9944V13.328Z"
+                  fill="black"
+                />
+                <path
+                  d="M14.0023 15.9937C13.6343 15.9937 13.3359 16.292 13.3359 16.66V17.3264C13.3359 17.6945 13.6343 17.9928 14.0023 17.9928C14.3704 17.9928 14.6687 17.6945 14.6687 17.3264V16.66C14.6688 16.292 14.3704 15.9937 14.0023 15.9937Z"
+                  fill="black"
+                />
+                <path
+                  d="M9.33757 9.99597C9.33757 9.62791 9.03925 9.32959 8.6712 9.32959C8.30314 9.32959 8.00482 9.62791 8.00482 9.99597V10.6623C8.00482 11.0304 8.30314 11.3287 8.6712 11.3287C9.03925 11.3287 9.33757 11.0304 9.33757 10.6623V9.99597Z"
+                  fill="black"
+                />
+                <path
+                  d="M9.33757 13.328C9.33757 12.9599 9.03925 12.6616 8.6712 12.6616C8.30314 12.6616 8.00482 12.9599 8.00482 13.328V13.9944C8.00482 14.3624 8.30314 14.6607 8.6712 14.6607C9.03925 14.6607 9.33757 14.3624 9.33757 13.9944V13.328Z"
+                  fill="black"
+                />
+                <path
+                  d="M8.6712 15.9937C8.30314 15.9937 8.00482 16.292 8.00482 16.66V17.3264C8.00482 17.6945 8.30314 17.9928 8.6712 17.9928C9.03925 17.9928 9.33757 17.6945 9.33757 17.3264V16.66C9.33757 16.292 9.03917 15.9937 8.6712 15.9937Z"
+                  fill="black"
+                />
+                <path
+                  d="M20.6664 22.3244V20.3252C20.6664 20.1412 20.5172 19.992 20.3332 19.992H5.33916V5.33122C5.33916 3.12297 7.1293 1.33283 9.33756 1.33283H10.6704V4.06509C9.11882 4.38184 8.0045 5.74684 8.00481 7.33042C8.00481 7.69848 8.30313 7.9968 8.67119 7.9968H14.0024C14.3705 7.9968 14.6688 7.69848 14.6688 7.33042C14.6691 5.74684 13.5548 4.38176 12.0032 4.06509V0.666374C12.0032 0.298318 11.7048 0 11.3368 0H9.33764C6.39319 0 4.00633 2.38686 4.00633 5.33122V19.992H0.907575C0.410742 19.992 0.00793457 20.3948 0.00793457 20.8916V21.7579C0.00793457 22.2548 0.410742 22.6576 0.907575 22.6576H20.3332C20.5172 22.6576 20.6664 22.5084 20.6664 22.3244Z"
+                  fill="black"
+                />
+                <path
+                  d="M39.0923 19.992H33.0014C32.8174 19.9883 32.6652 20.1345 32.6616 20.3185C32.6615 20.3208 32.6615 20.323 32.6615 20.3252V22.3244C32.6615 22.5084 32.8107 22.6577 32.9947 22.6577H39.0923C39.5891 22.6577 39.9919 22.2549 39.9919 21.758V20.8917C39.9919 20.3948 39.5892 19.992 39.0923 19.992Z"
+                  fill="black"
+                />
+                <path
+                  d="M37.6263 23.9905H32.9948C32.8108 23.9905 32.6615 24.1396 32.6615 24.3237V30.6545C32.6615 31.0226 32.3632 31.3209 31.9952 31.3209C31.6271 31.3209 31.3288 31.0225 31.3288 30.6545V29.6549C31.3288 29.471 31.1796 29.3217 30.9956 29.3217H30.3292C30.1452 29.3217 29.996 29.4709 29.996 29.6549V30.6545C29.996 31.0226 29.6976 31.3209 29.3296 31.3209C28.9615 31.3209 28.6632 31.0225 28.6632 30.6545V29.6549C28.6632 29.471 28.5141 29.3217 28.33 29.3217H27.6636C27.4796 29.3217 27.3304 29.4709 27.3304 29.6549V30.6545C27.3304 31.0226 27.0321 31.3209 26.664 31.3209C26.296 31.3209 25.9976 31.0225 25.9976 30.6545V29.6549C25.9976 29.471 25.8485 29.3217 25.6644 29.3217H24.998C24.814 29.3217 24.6648 29.4709 24.6648 29.6549V30.6545C24.6648 31.0226 24.3665 31.3209 23.9984 31.3209C23.6304 31.3209 23.3321 31.0225 23.3321 30.6545V29.6549C23.3321 29.471 23.1829 29.3217 22.9988 29.3217H22.3325C22.1485 29.3217 21.9992 29.4709 21.9992 29.6549V30.6545C21.9992 31.0226 21.7008 31.3209 21.3329 31.3209C20.9648 31.3209 20.6665 31.0225 20.6665 30.6545V24.3237C20.6665 24.1397 20.5173 23.9905 20.3333 23.9905H2.37373C2.18599 23.9903 2.03371 24.1424 2.03363 24.3301C2.03363 24.3346 2.03371 24.3392 2.03386 24.3437C2.29376 29.0884 4.35294 33.9998 7.36501 35.5125C6.35878 36.5872 6.4143 38.274 7.48887 39.2802C8.56352 40.2865 10.2503 40.231 11.2566 39.1564C12.0637 38.2945 12.2075 37.0042 11.61 35.9857H28.3699C27.9799 36.6366 27.8946 37.4257 28.1366 38.1448C28.6061 39.5401 30.1179 40.2906 31.5132 39.821C32.9085 39.3515 33.6589 37.8398 33.1894 36.4445C33.0686 36.0856 32.8727 35.7565 32.6148 35.4792C35.647 33.9664 37.7062 29.0551 37.9461 24.3103C37.9363 24.1379 37.7987 24.0003 37.6263 23.9905Z"
+                  fill="black"
+                />
+                <path
+                  d="M22.3324 27.9889H30.9955C31.1795 27.9889 31.3288 27.8398 31.3288 27.6557V20.3253C31.3324 20.1486 31.1923 20.0025 31.0156 19.9989C31.0133 19.9988 31.0112 19.9988 31.0089 19.9988H22.3457C22.1632 20.0023 22.0161 20.1494 22.0125 20.332V27.6624C22.0159 27.8388 22.1561 27.9819 22.3324 27.9889Z"
+                  fill="black"
                 />
               </svg>
-              <strong>Verified</strong>
-            </div>
-          </div>
-          <div class="flex justify-between py-2">
-            <div class="text-center text-sm">
-              <strong>6</strong>
-              <p>Bedroom</p>
-            </div>
-            <div class="text-center text-sm">
-              <strong>6</strong>
+
               <p>Bathroom</p>
+              <strong class="text-3xl">6</strong>
             </div>
-            <div class="text-center text-sm">
-              <strong>6</strong>
-              <p>Sleeps</p>
-            </div>
-          </div>
-          <div class="p-2 bg-gray-100 flex justify-between">
-            <div class="flex items-center space-x-3">
-              <h5 class="text-3xl">$4,555</h5>
-              <p class="text-sm text-gray-400">7 night</p>
-            </div>
-            <div>
-              <button
-                class="bg-indigo-600 text-white text-sm py-3 px-5 outline-none focus:outline-none rounded"
+            <div
+              class="text-center text-sm w-full border rounded-xl grid items-center p-4"
+            >
+              <svg
+                class="h-8 w-8 mx-auto"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                Booq
-              </button>
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M3.41748 10.2819C3.41043 13.2362 3.4154 16.1902 3.4154 19.1442C3.4154 20.1828 3.38529 21.2233 3.43019 22.2602C3.46597 23.1106 4.07705 23.6641 4.8676 23.667C5.66741 23.6692 6.2463 23.1212 6.31842 22.275C6.34094 22.0169 6.32546 21.7559 6.32546 21.4963C6.32615 18.8348 6.31842 16.1723 6.34094 13.5114C6.34301 13.283 6.54085 13.055 6.64751 12.8274C6.78858 13.0603 6.96459 13.2801 7.05799 13.5306C7.12182 13.7018 7.0707 13.9158 7.0707 14.1104C7.0707 21.9987 7.06932 29.887 7.07139 37.7755C7.07208 39.166 7.71894 39.9771 8.82395 39.9995C9.99416 40.0227 10.6501 39.2313 10.6551 37.7587C10.6622 35.4871 10.6565 33.2146 10.6565 30.9422C10.6565 28.7674 10.6419 26.5925 10.674 24.4176C10.6775 24.153 10.9231 23.8913 11.0565 23.629C11.1709 23.6746 11.2844 23.7201 11.3988 23.7671C11.3988 24.1516 11.3988 24.5361 11.3988 24.9199C11.3988 29.2696 11.4017 33.6194 11.3961 37.9691C11.3947 38.783 11.6381 39.5548 12.4309 39.7681C13.0124 39.9252 13.8684 39.8909 14.2978 39.5532C14.7398 39.2052 15.0156 38.3901 15.019 37.7762C15.0639 29.7917 15.0478 21.805 15.0457 13.8198C15.0457 13.6896 14.9966 13.5451 15.0393 13.4339C15.12 13.224 15.2513 13.0336 15.3614 12.8354C15.4842 13.0177 15.6798 13.1882 15.7142 13.3865C15.7739 13.7334 15.7366 14.0975 15.7366 14.4539C15.7359 16.921 15.7247 19.388 15.7359 21.8549C15.7409 23.03 16.2586 23.6542 17.1805 23.6649C18.1283 23.6754 18.6286 23.0777 18.63 21.8935C18.6341 17.9665 18.6405 14.0386 18.6271 10.1113C18.6209 8.16516 17.4968 7.0567 15.5276 7.04648C12.574 7.03142 9.61961 7.0328 6.66672 7.04234C4.53781 7.04828 3.42231 8.16419 3.41748 10.2819Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M13.9291 2.91752C13.9418 1.30105 12.6544 -0.0013805 11.0457 1.09816e-06C9.43265 0.00152086 8.11723 1.30851 8.12787 2.89887C8.13906 4.45496 9.42022 5.7375 10.9811 5.75394C12.6326 5.7719 13.9172 4.53606 13.9291 2.91752Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M33.6952 21.8541C33.7 23.0285 34.2178 23.6542 35.1398 23.6642C36.0874 23.6747 36.5877 23.077 36.5891 21.8935C36.5934 17.9658 36.5996 14.038 36.5863 10.1106C36.58 8.16445 35.456 7.05599 33.4867 7.04577C30.533 7.03071 27.5787 7.03209 24.6257 7.04149C22.4979 7.04784 21.3824 8.16376 21.3774 10.2822C21.3704 13.2364 21.3753 16.1904 21.3753 19.1444C21.3753 20.1831 21.3451 21.2236 21.39 22.2605C21.4258 23.1108 22.0368 23.6643 22.8274 23.6672C23.6272 23.6694 24.2061 23.1215 24.2783 22.2752C24.3007 22.0172 24.2854 21.7562 24.2854 21.4966C24.2861 18.8351 24.2783 16.1726 24.3007 13.5116C24.3029 13.2833 24.5006 13.0553 24.6073 12.8276C24.7484 13.0605 24.9245 13.2804 25.0178 13.5308C25.0816 13.702 25.0305 13.916 25.0305 14.1107C25.0305 21.9989 25.029 29.8873 25.0312 37.7758C25.0319 39.1662 25.6789 39.9774 26.7837 39.9998C27.9541 40.023 28.6099 39.2316 28.6149 37.7589C28.622 35.4873 28.6163 33.2149 28.6163 30.9424C28.6163 28.7676 28.6016 26.5927 28.6338 24.4178C28.6373 24.1532 28.8829 23.8916 29.0163 23.6292C29.1307 23.6748 29.2442 23.7204 29.3588 23.7674C29.3588 24.1519 29.3588 24.5364 29.3588 24.9202C29.3588 29.2699 29.3617 33.6197 29.3559 37.9694C29.3545 38.7833 29.5979 39.555 30.3907 39.7683C30.9722 39.9254 31.8281 39.8912 32.2575 39.5535C32.6995 39.2055 32.9752 38.3903 32.9788 37.7765C33.0237 29.792 33.0076 21.8052 33.0055 13.82C33.0055 13.6899 32.9564 13.5454 32.9991 13.4341C33.0798 13.2243 33.2109 13.0339 33.3212 12.8356C33.4439 13.018 33.6396 13.1885 33.674 13.3867C33.7337 13.7337 33.6964 14.0977 33.6964 14.4542C33.6952 16.9203 33.684 19.3873 33.6952 21.8541Z"
+                    fill="black"
+                  />
+                  <path
+                    d="M31.8893 2.91752C31.902 1.30105 30.6145 -0.0013805 29.0059 1.09816e-06C27.393 0.00152086 26.0776 1.30851 26.0881 2.89887C26.0993 4.45496 27.3804 5.7375 28.9413 5.75394C30.5928 5.7719 31.8774 4.53606 31.8893 2.91752Z"
+                    fill="black"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="40" height="40" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>Sleeps</p>
+              <strong class="text-3xl">6</strong>
             </div>
           </div>
-        </div>
-        <div class="col-span-12 md:col-span-8">
-          <img
-            src="https://via.placeholder.com/350"
-            class="h-80 object-cover w-full"
-          />
         </div>
       </div>
       <div class="grid grid-cols-12 gap-4 py-6 md:py-12">
-        <div class="col-span-12 md:col-span-8">
-          <strong class="text-lg">About this Villa</strong>
-          <p class="text-sm">
+        <div class="col-span-12 md:col-span-6">
+          <h2 class="text-2xl pb-4 font-bold">About this Villa</h2>
+          <p class="text-base leading-6">
             Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -131,29 +281,49 @@
             anim id est laborum.
           </p>
         </div>
-        <div class="col-span-12 md:col-span-4 p-2 space-y-5">
-          <div class="border border-black p-2 flex items-center justify-evenly">
+        <div class="col-span-12 md:col-span-6 p-2 space-y-5">
+          <div
+            class="rounded-xl p-4 flex items-center justify-between bg-white"
+          >
             <h2 class="text-2xl font-semibold">Booq</h2>
-            <button class="bg-indigo-600 text-white px-4 py-2">Select</button>
-            <p class="text-green-500">Save 10%</p>
-            <span class="text-xl"> $3,444 </span>
+            <div>
+              <p class="text-green-500 bg-green-100 px-4 py-2 rounded text-xs">
+                Save 10%
+              </p>
+              <span class="text-xl font-bold text-green-500"> $3,444 </span>
+            </div>
+            <button
+              class="bg-yellow-500 rounded-full filter drop-shadow-lg text-white px-6 py-2"
+            >
+              Select
+            </button>
           </div>
-          <div class="border border-black p-2 flex items-center justify-evenly">
+          <div
+            class="rounded-xl p-4 flex items-center justify-between bg-white"
+          >
             <h2 class="text-2xl font-semibold">Booq</h2>
-            <button class="bg-indigo-600 text-white px-4 py-2">Select</button>
-            <p class="text-red-500">- 10%</p>
-            <span class="text-xl"> $3,444 </span>
+            <div>
+              <span class="text-xl font-bold text-red-500"> $3,444 </span>
+            </div>
+            <button class="bg-yellow-500 rounded-full text-white px-6 py-2">
+              Select
+            </button>
           </div>
-          <div class="border border-black p-2 flex items-center justify-evenly">
+          <div
+            class="rounded-xl p-4 flex items-center justify-between bg-white"
+          >
             <h2 class="text-2xl font-semibold">Booq</h2>
-            <button class="bg-indigo-600 text-white px-4 py-2">Select</button>
-            <p class="text-red-500">- 10%</p>
-            <span class="text-xl"> $3,444 </span>
+            <div>
+              <span class="text-xl font-bold text-red-500"> $3,444 </span>
+            </div>
+            <button class="bg-yellow-500 rounded-full text-white px-6 py-2">
+              Select
+            </button>
           </div>
         </div>
       </div>
       <div>
-        <strong class="text-lg">Availability</strong>
+        <h2 class="text-2xl pb-4 font-bold">Availability</h2>
         <div class="h-96">
           <div class="py-6">
             <h3 class="text-2xl font-semibold py-2">7 night in Nova</h3>
@@ -162,113 +332,462 @@
         </div>
       </div>
       <div>
-        <strong class="text-lg">Reviews</strong>
-        <p class="font-semibold py-2 text-xl">
-          <strong class="text-red-600"> ★ </strong>5.00 (452 review)
-        </p>
-        <div
-          class="py-4 grid grid-cols-1 md:grid-cols-2 max-w-screen-xl w-full gap-3 lg:gap-x-20"
-        >
-          <div class="flex justify-between item">
-            <span>Cleanliness</span>
-            <div class="flex justify-between items-center space-x-3">
-              <span class="w-48 bg-black h-2"></span>
-              <strong class="text-xs">5.00</strong>
-            </div>
-          </div>
-          <div class="flex justify-between item">
-            <span>Accuracy</span>
-            <div class="flex justify-between items-center space-x-3">
-              <span class="w-48 bg-black h-2"></span>
-              <strong class="text-xs">5.00</strong>
-            </div>
-          </div>
-          <div class="flex justify-between item">
-            <span>Communication</span>
-            <div class="flex justify-between items-center space-x-3">
-              <span class="w-48 bg-black h-2"></span>
-              <strong class="text-xs">5.00</strong>
-            </div>
-          </div>
-          <div class="flex justify-between item">
-            <span>Location</span>
-            <div class="flex justify-between items-center space-x-3">
-              <span class="w-48 bg-black h-2"></span>
-              <strong class="text-xs">5.00</strong>
-            </div>
-          </div>
-          <div class="flex justify-between item">
-            <span>Check-in</span>
-            <div class="flex justify-between items-center space-x-3">
-              <span class="w-48 bg-black h-2"></span>
-              <strong class="text-xs">5.00</strong>
-            </div>
-          </div>
-          <div class="flex justify-between item">
-            <span>Value</span>
-            <div class="flex justify-between items-center space-x-3">
-              <span class="w-48 bg-black h-2"></span>
-              <strong class="text-xs">5.00</strong>
-            </div>
-          </div>
-        </div>
-        <div class="flex overflow-x-scroll space-x-5">
-          <div class="w-64 md:w-96">
-            <div class="flex space-x-3 items-center">
-              <img
-                src="https://via.placeholder.com/350"
-                class="h-12 w-12 object-cover rounded-full"
-              />
+        <h2 class="text-2xl pb-4 font-bold">Reviews</h2>
+        <div class="pt-12 flex space-x-6 overflow-x-auto">
+          <div class="w-96 p-4 md:p-8 bg-white rounded-xl">
+            <div class="grid md:flex justify-between">
+              <div class="flex space-x-3 items-center">
+                <h4 class="text-2xl text-yellow-500">★ 4.4</h4>
+                <span class="text-xs">(214 reviews)</span>
+              </div>
               <div>
-                <strong class="pb-2">Leena dey</strong>
-                <p class="text-xs">Reseacher</p>
+                <h4 class="text-2xl text-primary">Brand</h4>
+              </div>
+            </div>
+            <div class="grid gap-2 pt-6">
+              <div class="flex justify-between">
+                <h5 class="text-sm">Cleanliness</h5>
+                <div class="flex items-center space-x-2">
+                  <div class="grid items-center">
+                    <span
+                      class="bg-gray-200 rounded-full h-1 w-24 relative z-0 col-start-1 row-start-1"
+                    ></span>
+                    <span
+                      class="h-1 w-20 bg-black rounded-full relative z-10 col-start-1 row-start-1"
+                    ></span>
+                  </div>
+                  <strong>4.9</strong>
+                </div>
+              </div>
+
+              <div class="flex justify-between">
+                <h5 class="text-sm">Check-in</h5>
+                <div class="flex items-center space-x-2">
+                  <div class="grid items-center">
+                    <span
+                      class="bg-gray-200 rounded-full h-1 w-24 relative z-0 col-start-1 row-start-1"
+                    ></span>
+                    <span
+                      class="h-1 w-24 bg-black rounded-full relative z-10 col-start-1 row-start-1"
+                    ></span>
+                  </div>
+                  <strong>5.0</strong>
+                </div>
+              </div>
+
+              <div class="flex justify-between">
+                <h5 class="text-sm">Location</h5>
+                <div class="flex items-center space-x-2">
+                  <div class="grid items-center">
+                    <span
+                      class="bg-gray-200 rounded-full h-1 w-24 relative z-0 col-start-1 row-start-1"
+                    ></span>
+                    <span
+                      class="h-1 w-24 bg-black rounded-full relative z-10 col-start-1 row-start-1"
+                    ></span>
+                  </div>
+                  <strong>5.0</strong>
+                </div>
               </div>
             </div>
             <div>
-              <p class="text-sm py-3">
+              <span class="font-serif text-5xl leading-none pt-4">"</span>
+              <p class="text-xs">
                 Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
+                nisi ut aliquip ex ea commodo consequat.
               </p>
             </div>
+            <div class="flex justify-between items-center pt-5">
+              <div class="flex space-x-3 items-center">
+                <img
+                  src="https://via.placeholder.com/350"
+                  class="h-12 w-12 rounded-full"
+                />
+                <strong class="text-sm">Kevin hart</strong>
+              </div>
+              <div>Date</div>
+            </div>
           </div>
-          <div class="w-64 md:w-96">
-            <div class="flex space-x-3 items-center">
-              <img
-                src="https://via.placeholder.com/350"
-                class="h-12 w-12 object-cover rounded-full"
-              />
+          <div class="w-96 p-4 md:p-8 bg-white rounded-xl">
+            <div class="grid md:flex justify-between">
+              <div class="flex space-x-3 items-center">
+                <h4 class="text-2xl text-yellow-500">★ 4.4</h4>
+                <span class="text-xs">(214 reviews)</span>
+              </div>
               <div>
-                <strong class="pb-2">Leena dey</strong>
-                <p class="text-xs">Reseacher</p>
+                <h4 class="text-2xl text-primary">Brand</h4>
+              </div>
+            </div>
+            <div class="grid gap-2 pt-6">
+              <div class="flex justify-between">
+                <h5 class="text-sm">Cleanliness</h5>
+                <div class="flex items-center space-x-2">
+                  <div class="grid items-center">
+                    <span
+                      class="bg-gray-200 rounded-full h-1 w-24 relative z-0 col-start-1 row-start-1"
+                    ></span>
+                    <span
+                      class="h-1 w-20 bg-black rounded-full relative z-10 col-start-1 row-start-1"
+                    ></span>
+                  </div>
+                  <strong>4.9</strong>
+                </div>
+              </div>
+
+              <div class="flex justify-between">
+                <h5 class="text-sm">Check-in</h5>
+                <div class="flex items-center space-x-2">
+                  <div class="grid items-center">
+                    <span
+                      class="bg-gray-200 rounded-full h-1 w-24 relative z-0 col-start-1 row-start-1"
+                    ></span>
+                    <span
+                      class="h-1 w-24 bg-black rounded-full relative z-10 col-start-1 row-start-1"
+                    ></span>
+                  </div>
+                  <strong>5.0</strong>
+                </div>
+              </div>
+
+              <div class="flex justify-between">
+                <h5 class="text-sm">Location</h5>
+                <div class="flex items-center space-x-2">
+                  <div class="grid items-center">
+                    <span
+                      class="bg-gray-200 rounded-full h-1 w-24 relative z-0 col-start-1 row-start-1"
+                    ></span>
+                    <span
+                      class="h-1 w-24 bg-black rounded-full relative z-10 col-start-1 row-start-1"
+                    ></span>
+                  </div>
+                  <strong>5.0</strong>
+                </div>
               </div>
             </div>
             <div>
-              <p class="text-sm py-3">
+              <span class="font-serif text-5xl leading-none pt-4">"</span>
+              <p class="text-xs">
                 Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-                Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur.
+                nisi ut aliquip ex ea commodo consequat.
               </p>
+            </div>
+            <div class="flex justify-between items-center pt-5">
+              <div class="flex space-x-3 items-center">
+                <img
+                  src="https://via.placeholder.com/350"
+                  class="h-12 w-12 rounded-full"
+                />
+                <strong class="text-sm">Kevin hart</strong>
+              </div>
+              <div>Date</div>
+            </div>
+          </div>
+          <div class="w-96 p-4 md:p-8 bg-white rounded-xl">
+            <div class="grid md:flex justify-between">
+              <div class="flex space-x-3 items-center">
+                <h4 class="text-2xl text-yellow-500">★ 4.4</h4>
+                <span class="text-xs">(214 reviews)</span>
+              </div>
+              <div>
+                <h4 class="text-2xl text-primary">Brand</h4>
+              </div>
+            </div>
+            <div class="grid gap-2 pt-6">
+              <div class="flex justify-between">
+                <h5 class="text-sm">Cleanliness</h5>
+                <div class="flex items-center space-x-2">
+                  <div class="grid items-center">
+                    <span
+                      class="bg-gray-200 rounded-full h-1 w-24 relative z-0 col-start-1 row-start-1"
+                    ></span>
+                    <span
+                      class="h-1 w-20 bg-black rounded-full relative z-10 col-start-1 row-start-1"
+                    ></span>
+                  </div>
+                  <strong>4.9</strong>
+                </div>
+              </div>
+
+              <div class="flex justify-between">
+                <h5 class="text-sm">Check-in</h5>
+                <div class="flex items-center space-x-2">
+                  <div class="grid items-center">
+                    <span
+                      class="bg-gray-200 rounded-full h-1 w-24 relative z-0 col-start-1 row-start-1"
+                    ></span>
+                    <span
+                      class="h-1 w-24 bg-black rounded-full relative z-10 col-start-1 row-start-1"
+                    ></span>
+                  </div>
+                  <strong>5.0</strong>
+                </div>
+              </div>
+
+              <div class="flex justify-between">
+                <h5 class="text-sm">Location</h5>
+                <div class="flex items-center space-x-2">
+                  <div class="grid items-center">
+                    <span
+                      class="bg-gray-200 rounded-full h-1 w-24 relative z-0 col-start-1 row-start-1"
+                    ></span>
+                    <span
+                      class="h-1 w-24 bg-black rounded-full relative z-10 col-start-1 row-start-1"
+                    ></span>
+                  </div>
+                  <strong>5.0</strong>
+                </div>
+              </div>
+            </div>
+            <div>
+              <span class="font-serif text-5xl leading-none pt-4">"</span>
+              <p class="text-xs">
+                Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="flex justify-between items-center pt-5">
+              <div class="flex space-x-3 items-center">
+                <img
+                  src="https://via.placeholder.com/350"
+                  class="h-12 w-12 rounded-full"
+                />
+                <strong class="text-sm">Kevin hart</strong>
+              </div>
+              <div>Date</div>
+            </div>
+          </div>
+          <div class="w-96 p-4 md:p-8 bg-white rounded-xl">
+            <div class="grid md:flex justify-between">
+              <div class="flex space-x-3 items-center">
+                <h4 class="text-2xl text-yellow-500">★ 4.4</h4>
+                <span class="text-xs">(214 reviews)</span>
+              </div>
+              <div>
+                <h4 class="text-2xl text-primary">Brand</h4>
+              </div>
+            </div>
+            <div class="grid gap-2 pt-6">
+              <div class="flex justify-between">
+                <h5 class="text-sm">Cleanliness</h5>
+                <div class="flex items-center space-x-2">
+                  <div class="grid items-center">
+                    <span
+                      class="bg-gray-200 rounded-full h-1 w-24 relative z-0 col-start-1 row-start-1"
+                    ></span>
+                    <span
+                      class="h-1 w-20 bg-black rounded-full relative z-10 col-start-1 row-start-1"
+                    ></span>
+                  </div>
+                  <strong>4.9</strong>
+                </div>
+              </div>
+
+              <div class="flex justify-between">
+                <h5 class="text-sm">Check-in</h5>
+                <div class="flex items-center space-x-2">
+                  <div class="grid items-center">
+                    <span
+                      class="bg-gray-200 rounded-full h-1 w-24 relative z-0 col-start-1 row-start-1"
+                    ></span>
+                    <span
+                      class="h-1 w-24 bg-black rounded-full relative z-10 col-start-1 row-start-1"
+                    ></span>
+                  </div>
+                  <strong>5.0</strong>
+                </div>
+              </div>
+
+              <div class="flex justify-between">
+                <h5 class="text-sm">Location</h5>
+                <div class="flex items-center space-x-2">
+                  <div class="grid items-center">
+                    <span
+                      class="bg-gray-200 rounded-full h-1 w-24 relative z-0 col-start-1 row-start-1"
+                    ></span>
+                    <span
+                      class="h-1 w-24 bg-black rounded-full relative z-10 col-start-1 row-start-1"
+                    ></span>
+                  </div>
+                  <strong>5.0</strong>
+                </div>
+              </div>
+            </div>
+            <div>
+              <span class="font-serif text-5xl leading-none pt-4">"</span>
+              <p class="text-xs">
+                Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="flex justify-between items-center pt-5">
+              <div class="flex space-x-3 items-center">
+                <img
+                  src="https://via.placeholder.com/350"
+                  class="h-12 w-12 rounded-full"
+                />
+                <strong class="text-sm">Kevin hart</strong>
+              </div>
+              <div>Date</div>
+            </div>
+          </div>
+          <div class="w-96 p-4 md:p-8 bg-white rounded-xl">
+            <div class="grid md:flex justify-between">
+              <div class="flex space-x-3 items-center">
+                <h4 class="text-2xl text-yellow-500">★ 4.4</h4>
+                <span class="text-xs">(214 reviews)</span>
+              </div>
+              <div>
+                <h4 class="text-2xl text-primary">Brand</h4>
+              </div>
+            </div>
+            <div class="grid gap-2 pt-6">
+              <div class="flex justify-between">
+                <h5 class="text-sm">Cleanliness</h5>
+                <div class="flex items-center space-x-2">
+                  <div class="grid items-center">
+                    <span
+                      class="bg-gray-200 rounded-full h-1 w-24 relative z-0 col-start-1 row-start-1"
+                    ></span>
+                    <span
+                      class="h-1 w-20 bg-black rounded-full relative z-10 col-start-1 row-start-1"
+                    ></span>
+                  </div>
+                  <strong>4.9</strong>
+                </div>
+              </div>
+
+              <div class="flex justify-between">
+                <h5 class="text-sm">Check-in</h5>
+                <div class="flex items-center space-x-2">
+                  <div class="grid items-center">
+                    <span
+                      class="bg-gray-200 rounded-full h-1 w-24 relative z-0 col-start-1 row-start-1"
+                    ></span>
+                    <span
+                      class="h-1 w-24 bg-black rounded-full relative z-10 col-start-1 row-start-1"
+                    ></span>
+                  </div>
+                  <strong>5.0</strong>
+                </div>
+              </div>
+
+              <div class="flex justify-between">
+                <h5 class="text-sm">Location</h5>
+                <div class="flex items-center space-x-2">
+                  <div class="grid items-center">
+                    <span
+                      class="bg-gray-200 rounded-full h-1 w-24 relative z-0 col-start-1 row-start-1"
+                    ></span>
+                    <span
+                      class="h-1 w-24 bg-black rounded-full relative z-10 col-start-1 row-start-1"
+                    ></span>
+                  </div>
+                  <strong>5.0</strong>
+                </div>
+              </div>
+            </div>
+            <div>
+              <span class="font-serif text-5xl leading-none pt-4">"</span>
+              <p class="text-xs">
+                Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="flex justify-between items-center pt-5">
+              <div class="flex space-x-3 items-center">
+                <img
+                  src="https://via.placeholder.com/350"
+                  class="h-12 w-12 rounded-full"
+                />
+                <strong class="text-sm">Kevin hart</strong>
+              </div>
+              <div>Date</div>
+            </div>
+          </div>
+          <div class="w-96 p-4 md:p-8 bg-white rounded-xl">
+            <div class="grid md:flex justify-between">
+              <div class="flex space-x-3 items-center">
+                <h4 class="text-2xl text-yellow-500">★ 4.4</h4>
+                <span class="text-xs">(214 reviews)</span>
+              </div>
+              <div>
+                <h4 class="text-2xl text-primary">Brand</h4>
+              </div>
+            </div>
+            <div class="grid gap-2 pt-6">
+              <div class="flex justify-between">
+                <h5 class="text-sm">Cleanliness</h5>
+                <div class="flex items-center space-x-2">
+                  <div class="grid items-center">
+                    <span
+                      class="bg-gray-200 rounded-full h-1 w-24 relative z-0 col-start-1 row-start-1"
+                    ></span>
+                    <span
+                      class="h-1 w-20 bg-black rounded-full relative z-10 col-start-1 row-start-1"
+                    ></span>
+                  </div>
+                  <strong>4.9</strong>
+                </div>
+              </div>
+
+              <div class="flex justify-between">
+                <h5 class="text-sm">Check-in</h5>
+                <div class="flex items-center space-x-2">
+                  <div class="grid items-center">
+                    <span
+                      class="bg-gray-200 rounded-full h-1 w-24 relative z-0 col-start-1 row-start-1"
+                    ></span>
+                    <span
+                      class="h-1 w-24 bg-black rounded-full relative z-10 col-start-1 row-start-1"
+                    ></span>
+                  </div>
+                  <strong>5.0</strong>
+                </div>
+              </div>
+
+              <div class="flex justify-between">
+                <h5 class="text-sm">Location</h5>
+                <div class="flex items-center space-x-2">
+                  <div class="grid items-center">
+                    <span
+                      class="bg-gray-200 rounded-full h-1 w-24 relative z-0 col-start-1 row-start-1"
+                    ></span>
+                    <span
+                      class="h-1 w-24 bg-black rounded-full relative z-10 col-start-1 row-start-1"
+                    ></span>
+                  </div>
+                  <strong>5.0</strong>
+                </div>
+              </div>
+            </div>
+            <div>
+              <span class="font-serif text-5xl leading-none pt-4">"</span>
+              <p class="text-xs">
+                Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="flex justify-between items-center pt-5">
+              <div class="flex space-x-3 items-center">
+                <img
+                  src="https://via.placeholder.com/350"
+                  class="h-12 w-12 rounded-full"
+                />
+                <strong class="text-sm">Kevin hart</strong>
+              </div>
+              <div>Date</div>
             </div>
           </div>
         </div>
